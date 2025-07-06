@@ -9,7 +9,7 @@ app=FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["inquisitive-crumble-09762b.netlify.app"],  # Allow all origins (use specific domains in production)
+    allow_origins=["*"],  # Allow all origins (use specific domains in production)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
